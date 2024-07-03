@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dancing+Script&family=East+Sea+Dokdo&family=Josefin+Sans&family=Lilita+One&family=Montserrat&family=Noto+Sans&family=Open+Sans&family=Oswald&family=Roboto+Condensed&family=Rubik+Vinyl&family=Sacramento&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #000;
+  font-family: "Oswald", sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: "#fff";
+  background-color: #000;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 40px grey;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 20px;
+  margin: auto;
+}
+
+.nav-link:hover {
+  text-shadow: 1px 1px 20px #fff;
+}
+
+.MuiOutlinedInput-input-root.Mui-focused,
+.MuiOutlinedInput-notchedOutline {
+  border-color: black !important;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.img-shadow {
+  filter: drop-shadow(0.5px 0.5px 10px #000);
+}
+
+.juice-pic {
+  /* filter: drop-shadow(1px 1px 150px #000); */
+  animation: blink 3s infinite ease-in-out alternate;
+}
+
+@keyframes blink {
+  from{
+    filter: drop-shadow(1px 1px 50px #000);
+  }
+  to{
+    filter: drop-shadow(1px 1px 150px #000);
+  }
+}
+
+/* .juice-pic:hover {
+  filter: drop-shadow(1px 1px 150px #000);
+} */
